@@ -24,12 +24,17 @@ public class CarpetCost
     
     /**
      * This is a method that will calculate the total cost of the carpet for the room and return the answer
-     * @return the total cost of the ccarpet
+     * @return the total cost for the carpet
      */
     public double getCost(){
         return size.getArea() * costPerSqFt;
     }
     
+    /**
+     * This is a method that allows the program to print out the cost of carpet 
+     * per square foot and total cost for carpet.
+     * @return the output of the cost for single square foot's carpet and total cost
+     */
     public String toString(){
         String ans = String.format("The cost per sq ft is: $%.2f\n" + 
         "The total cost is: $%.2f\n", costPerSqFt, getCost());
