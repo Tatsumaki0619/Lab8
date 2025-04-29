@@ -1,6 +1,6 @@
 
 /**
- * This is a program working as a blueprint that calculates the area and outprint for the further calculation
+ * This is a program working as a blue print that calculates the area and outprint for the further calculation
  *
  * @author Qianyi Li
  * @version v1.0
@@ -23,7 +23,7 @@ public class RoomSize
     
     /**
      * This is a constructor that works as a copy method for passing data to another method
-     * @param object2 This object will provide the data that need to be copied
+     * @param object2 This object will provide the data that needs to be copied
      */
     public RoomSize(RoomSize object2){
         name = object2.name;
@@ -45,7 +45,7 @@ public class RoomSize
      */
     public String toString(){
         String ans = String.format("Room Name: %s\n" +
-        "Length: %f\n" + "Width: %f\n", name, length, width); 
+        "Length: %.1f\n" + "Width: %.1f\n" + "Area: %.2f\n", name, length, width, getArea()); 
         return ans;
     }
 }

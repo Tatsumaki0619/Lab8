@@ -14,8 +14,6 @@ public class CarpetCostDemo
 {
     public static void main(String []args){
         Scanner keyboard = new Scanner(System.in);
-        
-        do{
         System.out.print("Enter room name: ");
         String name = keyboard.nextLine();
         System.out.print("Enter room length: ");
@@ -31,8 +29,5 @@ public class CarpetCostDemo
         System.out.println();
         System.out.print(size.toString());
         System.out.print(cost.toString());
-        
-        System.out.print("Whould you like to calculate another room? (enter yes/no to continue)");
-        }while(keyboard.next().equalsIgnoreCase("yes"));
     }
 }

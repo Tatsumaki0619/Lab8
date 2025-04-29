@@ -1,6 +1,6 @@
 
 /**
- * This is a program that works as a blueprint to calculate the total cost 
+ * This is a program that works as a blue print to calculate the total cost 
  * for the carpet's total cost.
  *
  * @author Qianyi Li
@@ -36,8 +36,8 @@ public class CarpetCost
      * @return the output of the cost for single square foot's carpet and total cost
      */
     public String toString(){
-        String ans = String.format("The cost per sq ft is: $%.2f\n" + 
-        "The total cost is: $%.2f\n", costPerSqFt, getCost());
+        String ans = String.format("The cost per sq ft is: $%,.2f\n" + 
+        "The total cost is: $%,.2f\n", costPerSqFt, getCost());
         return ans;
     }
 }
